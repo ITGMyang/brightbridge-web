@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightBridge | Brand Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: "#f0fbfa",
+                            100: "#d6f2f0",
+                            200: "#aee4e1",
+                            300: "#7bcecb",
+                            400: "#4eb0ad",
+                            500: "#349491",
+                            600: "#297775",
+                            700: "#245f5d",
+                            800: "#204c4b",
+                            900: "#1e403f",
+                            950: "#0d2525",
+                        },
+                        accent: {
+                            50: "#fef8ee",
+                            100: "#fdf0d5",
+                            200: "#fbe0ab",
+                            300: "#f8c978",
+                            400: "#f5a740",
+                            500: "#f08c16",
+                            600: "#e0700d",
+                            700: "#ba540d",
+                            800: "#944211",
+                            900: "#783811",
+                            950: "#401a05",
+                        }
+                    },
+                    borderRadius: {
+                        card: "8px",
+                    },
+                    boxShadow: {
+                        soft: "0 1px 3px rgba(0, 0, 0, 0.05)",
+                        card: "0 1px 3px rgba(0, 0, 0, 0.08)",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 antialiased py-12 px-6">
+
+    <div class="max-w-6xl mx-auto space-y-20">
+        <!-- Header -->
+        <header class="border-b border-gray-200 pb-10">
+            <h1 class="text-4xl font-bold tracking-tight mb-2">BrightBridge Brand Guide</h1>
+            <p class="text-xl text-gray-600">The core visual identity and design system.</p>
+        </header>
+
+        <!-- Typography -->
+        <section>
+            <h2 class="text-3xl font-bold mb-8 border-b border-gray-200 pb-2 tracking-tight">Typography</h2>
+            <div class="space-y-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700 uppercase tracking-widest text-sm">Font Family
+                    </h3>
+                    <div
+                        class="bg-white p-6 rounded-card border border-gray-200 shadow-soft flex items-center justify-between">
+                        <span class="text-4xl font-normal">Nunito</span>
+                        <span class="text-gray-500 font-mono">sans-serif, Weights: 400, 500, 600, 700</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-gray-700 uppercase tracking-widest text-sm">Heading
+                        Styles</h3>
+                    <div class="bg-white border border-gray-200 rounded-card p-8 shadow-soft space-y-10">
+                        <div class="grid grid-cols-1 md:grid-cols-4 items-center gap-4">
+                            <div class="md:col-span-1 text-sm text-gray-500 font-mono">Display (7xl)<br />font-bold
+                            </div>
+                            <div class="md:col-span-3 text-7xl font-bold tracking-tight">Hero Heading</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-4 items-center gap-4 border-t border-gray-100 pt-6">
+                            <div class="md:col-span-1 text-sm text-gray-500 font-mono">H1 (5xl)<br />font-bold</div>
+                            <div class="md:col-span-3 text-5xl font-bold tracking-tight">Page Title</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-4 items-center gap-4 border-t border-gray-100 pt-6">
+                            <div class="md:col-span-1 text-sm text-gray-500 font-mono">H2 (4xl)<br />font-bold</div>
+                            <div class="md:col-span-3 text-4xl font-bold tracking-tight">Section Heading</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-4 items-center gap-4 border-t border-gray-100 pt-6">
+                            <div class="md:col-span-1 text-sm text-gray-500 font-mono">H3 (2xl)<br />font-bold</div>
+                            <div class="md:col-span-3 text-2xl font-bold">Block Heading</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-gray-700 uppercase tracking-widest text-sm">Body text
+                        Styles</h3>
+                    <div
+                        class="bg-white border border-gray-200 rounded-card p-8 shadow-soft space-y-10 focus:outline-none">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+                            <div class="md:col-span-1 text-sm text-gray-500 font-mono">Lead (1.125rem)</div>
+                            <div class="md:col-span-3 text-lg text-gray-600">The lead paragraph used for introductory
+                                text. It is larger to catch attention immediately.</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center border-t border-gray-100 pt-6">
+                            <div class="md:col-span-1 text-sm text-gray-500 font-mono">Base (1rem)</div>
+                            <div class="md:col-span-3 text-base text-gray-600">The standard body copy size used for the
+                                majority of long-form text. Highly legible and clean.</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center border-t border-gray-100 pt-6">
+                            <div class="md:col-span-1 text-sm text-gray-500 font-mono">Small (0.875rem)</div>
+                            <div class="md:col-span-3 text-sm text-gray-600">Smaller text used for captions, helper
+                                text, metrics, and secondary navigation links.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Colors -->
+        <section>
+            <h2 class="text-3xl font-bold mb-8 border-b border-gray-200 pb-2 tracking-tight">Colors</h2>
+
+            <div class="space-y-12">
+                <!-- Primary Brand Colors -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-gray-700 uppercase tracking-widest text-sm">Primary Blues
+                        (Brand)</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-11 gap-4">
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-50 shadow-sm border border-gray-100"></div>
+                            <p class="text-xs text-center font-mono">50<br />#f0f7ff</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-100 shadow-sm border border-gray-100"></div>
+                            <p class="text-xs text-center font-mono">100<br />#e0effe</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-200 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">200<br />#b9ddfe</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-300 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">300<br />#7cc4fd</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-400 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">400<br />#36a7fa</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-500 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">500<br />#0c8ce9</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-600 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono font-bold">600 (Main)<br />#006ec7</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-700 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">700<br />#0158a1</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-800 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">800<br />#064b85</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-900 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">900<br />#0b3f6e</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-primary-950 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">950<br />#072849</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grays / Neutrals -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-gray-700 uppercase tracking-widest text-sm">Neutrals
+                        (Grays)</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 gap-4">
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-gray-50 shadow-sm border border-gray-100"></div>
+                            <p class="text-xs text-center font-mono">50</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-gray-100 shadow-sm border border-gray-200"></div>
+                            <p class="text-xs text-center font-mono">100</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-gray-200 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">200 (Lines)</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-gray-300 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">300 (Hover/Borders)</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-gray-400 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">400</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-gray-500 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">500 (Subtext)</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-gray-600 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono font-bold">600 (Paragraphs)</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-gray-700 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">700</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-gray-800 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono">800 (Hover BG)</p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-16 rounded-md bg-gray-900 shadow-sm"></div>
+                            <p class="text-xs text-center font-mono font-bold">900 (Headings/Main)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shadows & Radii -->
+        <section>
+            <h2 class="text-3xl font-bold mb-8 border-b border-gray-200 pb-2 tracking-tight">Shadows & Cards</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Shadow Soft -->
+                <div class="bg-white rounded-card p-8 shadow-soft border border-gray-200">
+                    <h3 class="font-semibold mb-2">Soft Shadow (shadow-soft)</h3>
+                    <p class="text-sm text-gray-500 font-mono mb-4">0 1px 3px rgba(0,0,0,.05)</p>
+                    <p class="text-gray-600 text-sm">Used for subtle elevation on containers and standard sections.</p>
+                </div>
+
+                <!-- Shadow Card -->
+                <div
+                    class="bg-white rounded-card p-8 shadow-card border border-gray-200 transition-all hover:border-gray-300">
+                    <h3 class="font-semibold mb-2">Card Shadow (shadow-card)</h3>
+                    <p class="text-sm text-gray-500 font-mono mb-4">0 1px 3px rgba(0,0,0,.08)</p>
+                    <p class="text-gray-600 text-sm">Main elevation for cards, hover states, and interactive feature
+                        blocks.</p>
+                </div>
+
+                <!-- Radius -->
+                <div class="bg-white rounded-card p-8 border border-gray-200">
+                    <h3 class="font-semibold mb-2">Card Radius (rounded-card)</h3>
+                    <p class="text-sm text-gray-500 font-mono mb-4">8px</p>
+                    <p class="text-gray-600 text-sm">Standard border radius for consistent squared-but-soft corners on
+                        UI elements.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components (Buttons) -->
+        <section>
+            <h2 class="text-3xl font-bold mb-8 border-b border-gray-200 pb-2 tracking-tight">UI Components</h2>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-6 text-gray-700 uppercase tracking-widest text-sm">Buttons</h3>
+                <div
+                    class="bg-white border border-gray-200 rounded-card p-10 flex flex-wrap gap-8 items-center shadow-soft">
+
+                    <div class="space-y-3">
+                        <button
+                            class="bg-gray-900 text-white px-8 py-3 rounded-md text-base font-medium hover:bg-gray-800 transition-all">Primary
+                            Dark</button>
+                        <p class="text-xs text-gray-500 font-mono">bg-gray-900 / hover:bg-gray-800</p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <button
+                            class="bg-primary-600 text-white px-8 py-3 rounded-md text-base font-medium hover:bg-primary-700 transition-all">Brand
+                            Action</button>
+                        <p class="text-xs text-gray-500 font-mono">bg-primary-600 / hover:...700</p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <button
+                            class="border border-gray-300 text-gray-900 px-8 py-3 rounded-md text-base font-medium hover:bg-gray-50 transition-all">Outline
+                            Button</button>
+                        <p class="text-xs text-gray-500 font-mono">border-gray-300 / hover:bg-gray-50</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Notes -->
+        <section class="pb-20">
+            <h2 class="text-3xl font-bold mb-8 border-b border-gray-200 pb-2 tracking-tight">Design Principles</h2>
+            <div class="bg-primary-50 text-gray-900 rounded-card p-8 border border-primary-100">
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-primary-600 font-bold mr-3 mt-0.5">•</span>
+                        <span><strong>Clean & Minimal:</strong> Let the content and typography breathe with adequate
+                            spacing (generous margins & paddings like <code>section-padding</code>).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-primary-600 font-bold mr-3 mt-0.5">•</span>
+                        <span><strong>Subtle Elevation:</strong> Prefer soft outlines and subtle shadow shifts over
+                            heavy dropshadows. Rely on <code>border-gray-200</code> for definition.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-primary-600 font-bold mr-3 mt-0.5">•</span>
+                        <span><strong>Trustworthy Palettes:</strong> Base the experience heavily on neutral typography
+                            (Gray 600, 900) while injecting Primary Blue specifically for progress, branding, and
+                            emphasis.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
