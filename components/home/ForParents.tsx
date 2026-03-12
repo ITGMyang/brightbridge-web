@@ -11,7 +11,7 @@ export default function ForParents() {
                             Empowering <span className="text-primary-600">Parents</span>
                         </h1>
                         <p className="text-xl text-gray-600 leading-relaxed">
-                            You are your child's most important teacher. BrightBridge provides you with the guidance,
+                            You are your child&apos;s most important teacher. BrightBridge provides you with the guidance,
                             tools, and support to foster communication and development from the comfort of your home.
                         </p>
                         <ul className="space-y-3 pt-4 text-gray-700">

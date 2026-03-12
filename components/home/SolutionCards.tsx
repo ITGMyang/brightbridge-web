@@ -5,7 +5,7 @@ const solutions = [
     {
         icon: Brain,
         title: "AI-Powered Parent Coach",
-        description: "Real-time, personalized guidance tailored to your child's unique needs and development.",
+        description: "Real-time, personalized guidance tailored to your child&apos;s unique needs and development.",
     },
     {
         icon: Target,
@@ -20,7 +20,7 @@ const solutions = [
     {
         icon: TrendingUp,
         title: "Data-Driven Progress Tracking",
-        description: "Continuous insights and measurable progress to guide your child's journey.",
+        description: "Continuous insights and measurable progress to guide your child&apos;s journey.",
     },
 ];
 

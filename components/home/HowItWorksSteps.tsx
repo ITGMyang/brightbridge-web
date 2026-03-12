@@ -4,7 +4,7 @@ const steps = [
     {
         icon: Eye,
         title: "Observe & Assess",
-        description: "AI-powered analysis identifies your child's unique strengths and areas for growth.",
+        description: "AI-powered analysis identifies your child&apos;s unique strengths and areas for growth.",
     },
     {
         icon: Target,

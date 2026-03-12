@@ -11,7 +11,7 @@ export default function Contact() {
                         <div>
                             <h1 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">Get in Touch</h1>
                             <p className="text-xl text-gray-600">
-                                Whether you're a parent seeking guidance or an organization looking to partner,
+                                Whether you&apos;re a parent seeking guidance or an organization looking to partner,
                                 our team is here to help.
                             </p>
                         </div>

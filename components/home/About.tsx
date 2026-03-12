@@ -7,7 +7,7 @@ export default function About() {
                         About <span className="text-primary-600">BrightBridge</span>
                     </h1>
                     <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                        We believe that early intervention shouldn't be a privilege limited by geography,
+                        We believe that early intervention shouldn&apos;t be a privilege limited by geography,
                         cost, or diagnostic waiting lists.
                     </p>
                 </div>
@@ -30,7 +30,7 @@ export default function About() {
                             and when formal therapy begins.
                         </p>
                         <p className="text-gray-600 text-lg leading-relaxed">
-                            We use AI to empower the most important caregivers in a child's life: their parents.
+                            We use AI to empower the most important caregivers in a child&apos;s life: their parents.
                         </p>
                     </div>
                 </div>

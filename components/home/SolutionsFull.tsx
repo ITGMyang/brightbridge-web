@@ -24,7 +24,7 @@ export default function Solutions() {
                         <h2 className="text-3xl font-bold text-gray-900">Personalized Learning Plans</h2>
                         <p className="text-gray-600 text-lg">
                             Every child is unique. Our solutions use AI-driven assessments to create
-                            a roadmap specific to your child's developmental needs.
+                            a roadmap specific to your child&apos;s developmental needs.
                         </p>
                         <ul className="space-y-4 pt-4">
                             {[

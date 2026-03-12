@@ -23,7 +23,7 @@ export default function HowItWorks() {
                             <div className="w-16 h-16 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-2xl font-bold mb-6">1</div>
                             <h3 className="text-xl font-bold mb-4">Initial Assessment</h3>
                             <p className="text-gray-600">
-                                Complete a comprehensive digital assessment to help us pinpoint your child's current milestones and needs.
+                                Complete a comprehensive digital assessment to help us pinpoint your child&apos;s current milestones and needs.
                             </p>
                         </div>
                         {/* Step 2 */}

@@ -10,7 +10,7 @@ export default function ForOrganizations() {
                         Partner with <span className="text-primary-400">BrightBridge</span>
                     </h1>
                     <p className="text-xl text-gray-300">
-                        Amplify your clinic's reach and provide continuous care for waitlisted families.
+                        Amplify your clinic&apos;s reach and provide continuous care for waitlisted families.
                     </p>
                 </div>
             </section>
@@ -25,7 +25,7 @@ export default function ForOrganizations() {
                         />
                     </div>
                     <div className="space-y-6">
-                        <h2 className="text-3xl font-bold text-gray-900">Extend Your Clinic's Footprint</h2>
+                        <h2 className="text-3xl font-bold text-gray-900">Extend Your Clinic&apos;s Footprint</h2>
                         <p className="text-gray-600 text-lg leading-relaxed">
                             For hospitals, therapy centers, and schools, managing waitlists is a severe challenge.
                             Our platform allows organizations to provide evidence-based, parent-led interventions
