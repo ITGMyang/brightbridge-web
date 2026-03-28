@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HowItWorks() {
     return (
-        <section id="how-it-works" className="flex-1">
+        <section id="how-it-works" className="flex-1 scroll-mt-6">
             <section className="bg-white py-20 px-4">
                 <div className="container-custom max-w-4xl mx-auto text-center space-y-6">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">

@@ -4,7 +4,7 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function Solutions() {
     return (
-        <section id="solutions" className="flex-1">
+        <section id="solutions" className="flex-1 scroll-mt-6 lg:scroll-mt-6">
             {/* Header Section */}
             <section className="bg-primary-50 py-20 px-4">
                 <div className="container-custom max-w-4xl mx-auto text-center space-y-6">
@@ -47,8 +47,8 @@ export default function Solutions() {
                     </div>
                     <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-lg">
                         <img
-                            src="https://images.unsplash.com/photo-1576085898323-218337e3e43c?auto=format&fit=crop&q=80"
-                            alt="Children therapy"
+                            src="/images/lecture.png"
+                            alt="Comprehensive Autism Care Solutions"
                             className="w-full h-full object-cover"
                         />
                     </div>

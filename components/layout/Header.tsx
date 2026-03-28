@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -22,6 +22,27 @@ const mobileNavigation = [...leftNavigation, ...rightNavigation, { name: "Contac
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState("");
+
+    useEffect(() => {
+        const observerCallback = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, {
+            rootMargin: '-20% 0px -70% 0px',
+            threshold: 0,
+        });
+
+        const sections = document.querySelectorAll("section[id]");
+        sections.forEach((section) => observer.observe(section));
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
@@ -30,15 +51,25 @@ export default function Header() {
 
                     {/* Desktop Left Navigation */}
                     <div className="hidden lg:flex lg:gap-x-8 flex-1 justify-end pr-8 items-center">
-                        {leftNavigation.map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors whitespace-nowrap"
-                            >
-                                {item.name}
-                            </Link>
-                        ))}
+                        {leftNavigation.map((item) => {
+                            const isActive = activeSection === item.href.replace("#", "");
+                            return (
+                                <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    className={`relative text-sm font-medium transition-all duration-300 whitespace-nowrap py-1 ${
+                                        isActive ? "text-primary-600" : "text-gray-600 hover:text-primary-600"
+                                    }`}
+                                >
+                                    {item.name}
+                                    <span 
+                                        className={`absolute -bottom-1 left-0 h-0.5 bg-primary-600 transition-all duration-300 ${
+                                            isActive ? "w-full opacity-100" : "w-0 opacity-0"
+                                        }`} 
+                                    />
+                                </Link>
+                            );
+                        })}
                     </div>
 
                     {/* Logo - Centered */}
@@ -65,15 +96,25 @@ export default function Header() {
 
                     {/* Desktop Right Navigation & CTA */}
                     <div className="hidden lg:flex lg:gap-x-8 flex-1 justify-start pl-8 items-center">
-                        {rightNavigation.map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors whitespace-nowrap"
-                            >
-                                {item.name}
-                            </Link>
-                        ))}
+                        {rightNavigation.map((item) => {
+                            const isActive = activeSection === item.href.replace("#", "");
+                            return (
+                                <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    className={`relative text-sm font-medium transition-all duration-300 whitespace-nowrap py-1 ${
+                                        isActive ? "text-primary-600" : "text-gray-600 hover:text-primary-600"
+                                    }`}
+                                >
+                                    {item.name}
+                                    <span 
+                                        className={`absolute -bottom-1 left-0 h-0.5 bg-primary-600 transition-all duration-300 ${
+                                            isActive ? "w-full opacity-100" : "w-0 opacity-0"
+                                        }`} 
+                                    />
+                                </Link>
+                            );
+                        })}
                         <Button variant="default" size="default" asChild className="ml-2 font-bold px-6">
                             <Link href="#contact">Get Started</Link>
                         </Button>
@@ -100,16 +141,22 @@ export default function Header() {
                 {mobileMenuOpen && (
                     <div className="lg:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
                         <div className="flex flex-col space-y-4">
-                            {mobileNavigation.map((item) => (
-                                <Link
-                                    key={item.name}
-                                    href={item.href}
-                                    className="text-base font-medium text-gray-600 hover:text-primary-600 transition-colors"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                >
-                                    {item.name}
-                                </Link>
-                            ))}
+                             {mobileNavigation.map((item) => {
+                                const isActive = activeSection === item.href.replace("#", "");
+                                return (
+                                    <Link
+                                        key={item.name}
+                                        href={item.href}
+                                        className={`flex items-center gap-2 text-base font-medium transition-colors ${
+                                            isActive ? "text-primary-600" : "text-gray-600"
+                                        }`}
+                                        onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                        {isActive && <span className="w-1.5 h-1.5 rounded-full bg-primary-600" />}
+                                        {item.name}
+                                    </Link>
+                                );
+                            })}
                             <Button variant="default" size="lg" asChild className="w-full">
                                 <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
                             </Button>

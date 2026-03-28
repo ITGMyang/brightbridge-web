@@ -63,7 +63,7 @@ const teamMembers = [
 
 export default function About() {
     return (
-        <section id="about" className="flex-1">
+        <section id="about" className="flex-1 scroll-mt-6">
             <section className="bg-white py-24 px-4">
                 <div className="container-custom max-w-4xl mx-auto text-center space-y-6">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
@@ -80,8 +80,8 @@ export default function About() {
                 <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-lg">
                         <img
-                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
-                            alt="Our professional team"
+                            src="/images/About.png"
+                            alt="The BrightBridge professional team"
                             className="w-full h-full object-cover"
                         />
                     </div>

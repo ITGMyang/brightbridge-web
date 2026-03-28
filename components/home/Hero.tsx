@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
     return (
-        <section className="relative bg-white overflow-hidden">
+        <section id="hero" className="relative bg-white overflow-hidden scroll-mt-24">
             <div className="container-custom section-padding py-32 md:py-40">
                 <div className="max-w-4xl mx-auto text-center">
                     {/* Text Content */}

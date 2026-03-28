@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ForOrganizations() {
     return (
-        <section id="for-organizations" className="flex-1">
+        <section id="for-organizations" className="flex-1 scroll-mt-6">
             <section className="bg-primary-950 text-white py-24 px-4 text-center">
                 <div className="container-custom max-w-4xl mx-auto space-y-6">
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
@@ -19,8 +19,8 @@ export default function ForOrganizations() {
                 <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-lg">
                         <img
-                            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80"
-                            alt="Organizations and professionals team"
+                            src="/images/partnership.png"
+                            alt="Institutional partnership"
                             className="w-full h-full object-cover"
                         />
                     </div>

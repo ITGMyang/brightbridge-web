@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ForParents() {
     return (
-        <section id="for-parents" className="flex-1">
+        <section id="for-parents" className="flex-1 scroll-mt-6">
             <section className="bg-white py-20 px-4">
                 <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
@@ -27,8 +27,8 @@ export default function ForParents() {
                     </div>
                     <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-lg">
                         <img
-                            src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80"
-                            alt="Parent and child"
+                            src="/images/foreParents.png"
+                            alt="Parent-led intervention and support"
                             className="w-full h-full object-cover"
                         />
                     </div>

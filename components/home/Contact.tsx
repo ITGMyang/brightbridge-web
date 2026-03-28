@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Contact() {
     return (
-        <section id="contact" className="flex-1 bg-white">
+        <section id="contact" className="flex-1 bg-white scroll-mt-6">
             <section className="py-24 px-4">
                 <div className="container-custom max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
 

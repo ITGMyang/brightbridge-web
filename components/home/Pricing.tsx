@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Pricing() {
     return (
-        <section id="pricing" className="flex-1 bg-gray-50 py-20 px-4 min-h-[80vh] flex flex-col justify-center">
+        <section id="pricing" className="flex-1 bg-gray-50 py-20 px-4 min-h-[80vh] flex flex-col justify-center scroll-mt-6">
             <div className="container-custom max-w-5xl mx-auto">
                 <div className="text-center space-y-4 mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">Transparent Pricing</h1>
